@@ -1,0 +1,123 @@
+export const CUISINES = [
+  { id: 1, name: 'Burgers', emoji: '🍔' },
+  { id: 2, name: 'Pizza', emoji: '🍕' },
+  { id: 3, name: 'Biryani', emoji: '🍛' },
+  { id: 4, name: 'Chinese', emoji: '🥡' },
+  { id: 5, name: 'Sushi', emoji: '🍣' },
+  { id: 6, name: 'Desserts', emoji: '🍰' },
+  { id: 7, name: 'Thali', emoji: '🥘' },
+  { id: 8, name: 'Wraps', emoji: '🌯' },
+  { id: 9, name: 'Pasta', emoji: '🍝' },
+  { id: 10, name: 'Salads', emoji: '🥗' },
+]
+
+export const RESTAURANTS = [
+  {
+    id: 1,
+    name: "Burger Republic",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80",
+    rating: 4.5,
+    deliveryTime: "25-35 min",
+    cuisine: "Burgers, American",
+    minOrder: 149,
+    offer: "50% OFF up to ₹100",
+    tags: ["Bestseller", "Fast Delivery"],
+    priceForTwo: 400,
+  },
+  {
+    id: 2,
+    name: "Pizza Paradise",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80",
+    rating: 4.3,
+    deliveryTime: "30-40 min",
+    cuisine: "Pizza, Italian",
+    minOrder: 199,
+    offer: "Free delivery",
+    tags: ["New"],
+    priceForTwo: 500,
+  },
+  {
+    id: 3,
+    name: "Biryani House",
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800&q=80&auto=format&fit=crop",
+    rating: 4.7,
+    deliveryTime: "20-30 min",
+    cuisine: "Biryani, Mughlai",
+    minOrder: 99,
+    offer: "20% OFF",
+    tags: ["Trending", "Top Rated"],
+    priceForTwo: 350,
+  },
+  {
+    id: 4,
+    name: "Wok & Roll",
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&q=80",
+    rating: 4.1,
+    deliveryTime: "35-45 min",
+    cuisine: "Chinese, Pan-Asian",
+    minOrder: 149,
+    offer: "Buy 1 Get 1",
+    tags: [],
+    priceForTwo: 300,
+  },
+  {
+    id: 5,
+    name: "The Dessert Lab",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&q=80",
+    rating: 4.6,
+    deliveryTime: "15-25 min",
+    cuisine: "Desserts, Bakery",
+    minOrder: 99,
+    offer: "Flat ₹50 OFF",
+    tags: ["Sweet Pick"],
+    priceForTwo: 250,
+  },
+  {
+    id: 6,
+    name: "Curry Culture",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80",
+    rating: 4.4,
+    deliveryTime: "25-35 min",
+    cuisine: "North Indian, Thali",
+    minOrder: 129,
+    offer: "30% OFF",
+    tags: ["Homestyle"],
+    priceForTwo: 400,
+  },
+]
+
+export const MENU_ITEMS = {
+  1: [
+    { id: 101, name: "Classic Smash Burger", price: 199, description: "Double smash patty, cheddar, pickles, special sauce", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80", veg: false, bestseller: true, category: "Burgers" },
+    { id: 102, name: "Crispy Chicken Burger", price: 179, description: "Crispy fried chicken, coleslaw, chipotle mayo", image: "https://images.unsplash.com/photo-1598182198343-d3cfc52bc02e?w=300&q=80", veg: false, bestseller: false, category: "Burgers" },
+    { id: 103, name: "Veggie Delight Burger", price: 149, description: "Aloo tikki, fresh veggies, mint chutney, cheese", image: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=300&q=80", veg: true, bestseller: false, category: "Burgers" },
+    { id: 104, name: "Loaded Fries", price: 99, description: "Crispy fries loaded with cheese, jalapeños, sauces", image: "https://images.unsplash.com/photo-1576107232684-1279f390859f?w=300&q=80", veg: true, bestseller: true, category: "Sides" },
+    { id: 105, name: "Oreo Milkshake", price: 129, description: "Thick creamy oreo milkshake with whipped cream", image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=300&q=80", veg: true, bestseller: false, category: "Drinks" },
+  ],
+  2: [
+    { id: 201, name: "Margherita Pizza", price: 299, description: "Fresh mozzarella, tomato sauce, basil leaves", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80", veg: true, bestseller: true, category: "Pizzas" },
+    { id: 202, name: "Pepperoni Feast", price: 399, description: "Double pepperoni, mozzarella, oregano, chilli flakes", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=300&q=80", veg: false, bestseller: true, category: "Pizzas" },
+    { id: 203, name: "BBQ Chicken Pizza", price: 379, description: "Grilled chicken, BBQ sauce, onions, capsicum", image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=300&q=80", veg: false, bestseller: false, category: "Pizzas" },
+    { id: 204, name: "Garlic Bread", price: 99, description: "Buttery garlic bread with herbs and cheese dip", image: "https://images.unsplash.com/photo-1619531040576-f9416740661e?w=300&q=80", veg: true, bestseller: false, category: "Sides" },
+  ],
+  3: [
+    { id: 301, name: "Chicken Dum Biryani", price: 249, description: "Slow-cooked fragrant basmati with tender chicken", image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=300&q=80", veg: false, bestseller: true, category: "Biryani" },
+    { id: 302, name: "Veg Biryani", price: 189, description: "Fragrant basmati with mixed vegetables and saffron", image: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=300&q=80", veg: true, bestseller: false, category: "Biryani" },
+    { id: 303, name: "Mutton Biryani", price: 329, description: "Slow-cooked mutton in aromatic spices and basmati", image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300&q=80", veg: false, bestseller: true, category: "Biryani" },
+    { id: 304, name: "Raita", price: 49, description: "Chilled yogurt with boondi and spices", image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&q=80", veg: true, bestseller: false, category: "Sides" },
+  ],
+}
+
+export const OFFERS = [
+  { id: 1, title: "50% OFF", subtitle: "On first order", code: "FIRST50", color: "from-flame-500 to-ember-500", emoji: "🎉" },
+  { id: 2, title: "Free Delivery", subtitle: "Orders above ₹299", code: "FREEDEL", color: "from-purple-500 to-pink-500", emoji: "🛵" },
+  { id: 3, title: "Buy 1 Get 1", subtitle: "On selected items", code: "BOGO", color: "from-green-500 to-teal-500", emoji: "🍕" },
+  { id: 4, title: "₹100 OFF", subtitle: "On orders above ₹499", code: "SAVE100", color: "from-blue-500 to-cyan-500", emoji: "💰" },
+]
+
+export const REVIEWS = [
+  { id: 1, name: "Priya S.", avatar: "PS", rating: 5, text: "Lightning fast delivery! Food arrived hot and fresh. Will definitely order again!", location: "Bangalore" },
+  { id: 2, name: "Rahul M.", avatar: "RM", rating: 5, text: "Amazing variety of restaurants. The app is so smooth and the deals are unbeatable.", location: "Mumbai" },
+  { id: 3, name: "Anjali K.", avatar: "AK", rating: 4, text: "Love the real-time tracking feature. Always know exactly when my food will arrive.", location: "Delhi" },
+  { id: 4, name: "Vikram P.", avatar: "VP", rating: 5, text: "Best food delivery app! Great customer support too when there was a small issue.", location: "Pune" },
+]
