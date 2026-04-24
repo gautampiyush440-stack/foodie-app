@@ -27,15 +27,45 @@ export default function Checkout() {
 
   if (step === 'success') return (
     <div className="min-h-screen bg-cream-50 dark:bg-dark-900 flex items-center justify-center page-enter">
-      <motion.div initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center">
-        <div className="relative w-28 h-28 mx-auto mb-6">
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#22c55e" strokeWidth="6" />
-            <path d="M25 50 L42 67 L75 33" fill="none" stroke="#22c55e" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="check-anim" />
-          </svg>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.96 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="text-center"
+      >
+        <div className="relative w-32 h-32 mx-auto mb-6">
+          <motion.div
+            initial={{ scale: 0.6, y: 18, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            transition={{ type: 'spring', stiffness: 380, damping: 22 }}
+            className="absolute inset-0 grid place-items-center"
+          >
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 0.6, repeat: Infinity, ease: 'easeInOut' }}
+              className="text-6xl select-none"
+            >
+              🍔
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ scale: 0.6, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.25, type: 'spring', stiffness: 420, damping: 24 }}
+            className="absolute -bottom-2 -right-2 w-14 h-14 bg-white dark:bg-dark-800 rounded-full shadow-lg grid place-items-center"
+          >
+            <svg viewBox="0 0 100 100" className="w-10 h-10">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="#22c55e" strokeWidth="8" />
+              <path d="M25 50 L42 67 L75 33" fill="none" stroke="#22c55e" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" className="check-anim" />
+            </svg>
+          </motion.div>
         </div>
-        <h2 className="text-2xl font-display font-extrabold text-gray-900 dark:text-white mb-2">Order Placed! 🎉</h2>
-        <p className="text-gray-500 dark:text-gray-400">Your food is being prepared. Redirecting to tracking...</p>
+        <h2 className="text-2xl font-display font-extrabold text-gray-900 dark:text-white mb-2">
+          Order Placed!
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400">
+          Your food is being prepared. Redirecting to tracking...
+        </p>
       </motion.div>
     </div>
   )

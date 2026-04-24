@@ -5,7 +5,7 @@ import { useCart } from '../../context/CartContext'
 
 export default function Navbar() {
   const { itemCount, setIsOpen, darkMode, toggleDark } = useCart()
-  const [location, setLocation] = useState('Sector 18, Noida')
+  const [location, setLocation] = useState('Integral University, Lko')
   const [search, setSearch] = useState('')
   const navigate = useNavigate()
 
